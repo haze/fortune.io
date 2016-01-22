@@ -25,5 +25,5 @@ fortune := method(str,
 	writeln(if(f == nil, anyOne(def), anyOne(lns)))
 )
 
-if(System args size == 1, fortune(nil), if(System args size() > 2, "required one argument, custom fortune file path.", fortune(System args at(1))))
+if(System args size == 1, fortune(nil), if(System args size() > 2, writeln("required one argument, custom fortune file path."), fortune(System args at(1))))
 
